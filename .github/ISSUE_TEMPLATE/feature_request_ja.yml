@@ -14,7 +14,7 @@ body:
       description: この機能リクエストに関連する問題を説明してください
       placeholder: 例）〜の操作が面倒です
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: solution
@@ -22,7 +22,7 @@ body:
       label: 提案する解決策
       description: 考えられる解決策を説明してください
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: alternatives
