@@ -1,0 +1,50 @@
+name: 🐛 Bug report/バグ報告
+description: Report a bug/バグを報告する
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for reporting a bug!** 
+        バグ報告ありがとうございます。以下の情報を記入してください。
+
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description / バグの説明
+      description: |
+        Describe the bug in detail.  
+        バグの内容を詳しく説明してください
+      placeholder: できるだけ具体的に記述してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce / 再現手順
+      description: |
+        Provide the steps to reproduce the issue.  
+        バグを再現するための手順を記述してください
+      placeholder: |
+        1. Go to '...'  
+        2. Click on '...'  
+        3. Scroll to '...'  
+        4. See error  
+        1. '...' に移動  
+        2. '...' をクリック  
+        3. '...' までスクロール  
+        4. エラーが発生
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior / 期待する動作
+      description: |
+        What you expected to happen.  
+        本来期待される動作を記述してください
+    validations:
+      required: true
