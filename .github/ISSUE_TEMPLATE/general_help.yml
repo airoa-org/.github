@@ -1,0 +1,59 @@
+name: "❓ General Help / 一般的なヘルプ"
+description: "Ask for guidance or clarification / ガイダンスや質問全般"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **How can we help?**  
+        どのようなサポートが必要ですか？以下をご記入ください。
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / 質問内容
+      description: |
+        What do you need help with?  
+        質問や問題点を詳しく記述してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What I’ve Tried / 試したこと
+      description: |
+        Steps you’ve already taken.  
+        すでに試した手順やアプローチを記述してください
+    validations:
+      required: false
+
+  - type: input
+    id: context
+    attributes:
+      label: Context / 環境・状況
+      description: |
+        Project details, versions, OS, etc.  
+        プロジェクトの詳細、バージョン、環境などを記述してください
+    validations:
+      required: false
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome / 期待する結果
+      description: |
+        What solution or answer you’re looking for.  
+        期待する解決策や回答を記述してください
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information / その他の情報
+      description: |
+        Attach logs, screenshots, or links if available.  
+        ログやスクリーンショット、関連リンクなどがあれば追加してください
+    validations:
+      required: false
